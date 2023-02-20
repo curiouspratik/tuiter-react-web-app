@@ -1,4 +1,4 @@
-const NavTabItem = (tab, active) => {
+const NavMenuTabItem = (tab, active) => {
     return(`
         <li class="nav-item ${tab.last ? "d-none d-md-block" : ""}">
             <a class="nav-link ${active}" href="${tab.hyperlink}">
@@ -8,4 +8,4 @@ const NavTabItem = (tab, active) => {
     `)
 }
 
-export default NavTabItem;
+export default NavMenuTabItem;
