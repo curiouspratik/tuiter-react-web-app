@@ -4,7 +4,7 @@ import NavigationTab from "../NavigationTab/index.js";
 const ExploreComponent = () => {
     return(`
         <div class="row align-items-center mx-0">
-        <!-- search field and cog -->
+
             <div class="col-11 px-0">
                 <label for="search-tuiter" class="form-label w-100 mb-0">
                 <div class="input-group">
@@ -22,15 +22,14 @@ const ExploreComponent = () => {
                 <a href="explore-settings.html" class="fas fa-cog fa-2x text-decoration-none float-end"></a>
             </div>
         </div>
-        <!-- nav tabs -->
-<!--        TODO: make the below 'active' parameter flexible -->
+        
         ${NavigationTab("for you")}
-        <!-- image with overlaid text -->
+        
         <div class="position-relative mb-2">
             <img src="../images/spacex-starship-mk1.webp" class="card-img w-100" alt="...">
             <h2 class="fw-bolder position-absolute bottom-0 ps-2">SpaceX's Starship</h2>
         </div>
-        <!-- Posts -->
+
         ${PostSummaryList()}
     `);
 }
