@@ -4,7 +4,6 @@ const MarkTextAsLink = (
         markText
     }
 ) => {
-    // Split the title by markText, render markText later
     let textSplit = text.split(markText);
     return(
         <div>

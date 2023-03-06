@@ -1,4 +1,3 @@
-// import {Link} from "react-router-dom"
 import NavigationSidebar from "./navigation-sidebar";
 import HomeComponent from "./home";
 import ExploreComponent from "./explore";
