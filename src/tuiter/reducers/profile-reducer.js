@@ -1,16 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const profile = {
-    firstName: "Pembroke",
-    lastName: "Welsh Corgi",
-    handle: "@pembrokewelshcorgi",
-    profilePicture: "corgi.jpeg",
+    firstName: "Cyborg",
+    lastName: "John",
+    handle: "@johncyborg",
+    profilePicture: "cyborg.jpeg",
     bannerPicture: "golden-bridge.JPG",
     bio: "The Pembroke Welsh Corgi is a cattle herding dog breed that originated in Pembrokeshire, Wales. It is one of two breeds known as a Welsh Corgi. Pembroke Welsh Corgis descended from the Spitz family of dogs.",
-    website: "https://en.wikipedia.org/wiki/Welsh_Corgi",
-    location: "San Jose, CA",
-    dateOfBirth: "9/9/1999",
-    dateJoined: "9/2010",
+    website: "https://en.wikipedia.org/wiki/Cyborg",
+    location: "San Diago, CA",
+    dateOfBirth: "9/10/1989",
+    dateJoined: "9/2013",
     followingCount: 1234,
     followersCount: 5678,
     tuits: 6138

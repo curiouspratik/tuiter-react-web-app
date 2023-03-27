@@ -28,8 +28,8 @@ const ReduxExamples = () => {
         <Provider store={store}>
             <div>
                 <h2>Redux Examples</h2>
+
                 <Todos />
-                {/* component consumes the data */}
                 <HelloReduxExampleComponent />
             </div>
         </Provider>
