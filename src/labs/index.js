@@ -10,7 +10,7 @@ function Labs() {
             {/*<h1>Assignment 6</h1>*/}
             <Routes>
                 <Route index element={<Assignment6/>} />
-                <Route path="/a7" element={<Assignment7/>} />
+                <Route path="/a7" element={<Assignment7 />} />
             </Routes>
         </div>
     );
