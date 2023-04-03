@@ -64,18 +64,15 @@ const EditProfileComponent = () => {
         dispatch(updateUser(userInfo));
     }
 
-    // convert yyyy-MM-dd to MM/dd/yyyy
     const formatDateMM_dd_yyyy = (inputDate) => {
         const [year, month, date] = inputDate.split("-")
         return month + '/' + date+ '/' + year;
     }
 
-    // convert MM/dd/yyyy to yyyy-MM-dd
     const formatDateYYYY_MM_dd = (inputDate) => {
         return new Date(inputDate).toISOString().split('T')[0]
     }
 
-    // convert MM/dd/yyyy to MMM DD YYYY
     const formatDateMMMDDYYYY = (inputDate) => {
         return new Date(inputDate).toLocaleString('en-CA', {month: 'short', day: 'numeric', year: 'numeric'});
     }
@@ -84,7 +81,6 @@ const EditProfileComponent = () => {
 
     return(
         <>
-            {/* Edit profile and back button */}
             <div className="row align-items-center justify-content-start pb-1">
                 <div className="col-auto">
                     <Link to="/tuiter/profile" className="btn" title="cancel" >
@@ -96,7 +92,6 @@ const EditProfileComponent = () => {
                     <Link to="/tuiter/profile" className="btn btn-dark btn-sm rounded-pill position-relative float-end px-3 fw-bold" onClick={saveClickHandler}>Save</Link>
                 </div>
             </div>
-            {/* banner picture and avatar TODO: darken */}
             <div>
                 <img src={`/images/${profile.bannerPicture}`} className="w-100" style={darken_image} height="200" alt="banner" />
                 <button className="position-relative border border-0 rounded-circle btn-lg bg-dark bg-opacity-75 text-white" style={nudge_up_icon_1}><i className="bi bi-camera"/></button>
@@ -108,7 +103,6 @@ const EditProfileComponent = () => {
             </div>
 
             <div className="px-3">
-                {/* Change Name */}
                 <div className="border w-100 rounded-1 mt-2" >
                     <label className="wd-input-label text-secondary">Name</label>
                     <input type="text"
@@ -116,7 +110,6 @@ const EditProfileComponent = () => {
                            defaultValue={userName}
                            onChange={(event) => setUserName(event.target.value)} />
                 </div>
-                {/* Change Bio */}
                 <div className="border w-100 rounded-1 mt-4">
                     <label className="wd-input-label text-secondary">Bio</label>
                     <textarea rows={3}
@@ -124,7 +117,6 @@ const EditProfileComponent = () => {
                               value={bio}
                               onChange={(event) => setBio(event.target.value)} />
                 </div>
-                {/* Change Location */}
                 <div className="border w-100 rounded-1 mt-4" >
                     <label className="wd-input-label text-secondary">Location</label>
                     <input type="text"
@@ -132,7 +124,6 @@ const EditProfileComponent = () => {
                            defaultValue={location}
                            onChange={(event) => setLocation(event.target.value)} />
                 </div>
-                {/* Change Website */}
                 <div className="border w-100 rounded-1 mt-4" >
                     <label className="wd-input-label text-secondary">Website</label>
                     <input type="text"
@@ -140,7 +131,6 @@ const EditProfileComponent = () => {
                            defaultValue={website}
                            onChange={(event) => setWebsite(event.target.value)} />
                 </div>
-                {/* Change Birth Date */}
                 <div className="mt-4">
                     <div className="text-secondary" style={font_size}>
                         Birth Date {'\u00B7'}
@@ -156,7 +146,6 @@ const EditProfileComponent = () => {
                         />
                     }
                 </div>
-                {/* Switch to Professional */}
                 <div className="fw-bold mt-4 text-dark">
                     Switch to professional
                     <span className="float-end"><i className="bi bi-chevron-right"/></span>

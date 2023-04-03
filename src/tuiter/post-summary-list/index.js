@@ -8,7 +8,6 @@ const PostSummaryList = (
         sidebar = false
     }
 ) => {
-    // const postsArray = useSelector((state) => state.tuits)
     const {tuits, loading} = useSelector(state => state.tuitsData)
 
     const dispatch = useDispatch();
