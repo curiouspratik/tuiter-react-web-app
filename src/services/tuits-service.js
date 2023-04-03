@@ -9,9 +9,6 @@ import axios from 'axios';
 // Auto switch API: Locally REACT_APP_API_BASE can be set to http://localhost:4000/api, but when the application runs remotely it can
 const API_BASE = process.env.REACT_APP_API_BASE;
 const TUITS_API = `${API_BASE}/tuits`;
-console.log(API_BASE)
-
-
 
 //const TUITS_API = 'https://web-node-app.onrender.com/api/tuits'
 
