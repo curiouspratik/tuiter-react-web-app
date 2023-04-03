@@ -1,5 +1,4 @@
 let whoItem;
-// eslint-disable-next-line no-unused-vars
 export default whoItem = [
     {   avatarIcon: '../../images/java-logo.png',
         userName: 'Java',

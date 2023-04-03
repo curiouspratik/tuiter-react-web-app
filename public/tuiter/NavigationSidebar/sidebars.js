@@ -16,7 +16,7 @@ export default sidebars = [
     },
     {
         stack: false,
-        source: "../explore/index.html",
+        source: "../ExploreScreen/index.html",
         iconMain: "fas fa-hashtag",
         iconSub: "",
         name: "explore",
@@ -37,7 +37,7 @@ export default sidebars = [
     },
     {
         stack: false,
-        source: "../bookmarks/index.html",
+        source: "/",
         iconMain: "fas fa-bookmark",
         iconSub: "",
         name: "bookmarks",

@@ -1,42 +1,30 @@
-.wd-body-font{
-  font-family: 'Chirp', sans-serif;
+body{
+    font-family: "Apple Braille", system-ui;
+    background-color: black;
+    color: white;
 }
-
-.wd-body-bg-color{
-  background-color: black;
+.wd-border {
+    border-color: rgb(47, 51, 54);
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 1px;
+    padding-top: 12px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
-
-.wd-body-fg-color{
-  color: white;
+.wd-float-left{
+    float: left;
 }
-
-.wd-border-setting {
-  border-top-style: solid;
-  border-color: rgb(47, 51, 54);
-  border-width: 1px;
-  padding-top: 12px;
-  border-left-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  margin-left: 16px;
-  margin-right: 16px;
+.wd-float-right{
+    float: right;
 }
-
-.wd-float-middle {
-  clear: both;
+.wd-float-done {
+    clear: both;
 }
-
-.wd-margin-left-side {
-  margin-left: 16px;
+.wd-margin-left {
+    margin-left: 16px;
 }
-
-.wd-fg-color-lightgray {
-  color: lightgray;
+.wd-fg-color-light-gray {
+    color: lightgray;
 }
-
-
-
-
-
-
-

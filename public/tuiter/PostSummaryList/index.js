@@ -12,3 +12,5 @@ const PostSummaryList = () => {
 };
 
 export default PostSummaryList;
+
+// $('#wd-post').append(`${PostSummaryList()}`)

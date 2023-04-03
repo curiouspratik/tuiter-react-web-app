@@ -16,3 +16,8 @@ const NavigationSidebar = (active) => {
 }
 
 export default NavigationSidebar;
+
+// Used for test only
+// $('#wd-nav').append(
+//     `${NavigationSidebar("home")}`
+// )

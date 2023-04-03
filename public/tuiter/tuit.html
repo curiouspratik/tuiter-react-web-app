@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-<a href="navigation.html">Back</a>
-<h1>Tuiter</h1>
-<h2>Home</h2>
-<img src="images/peguin.jpg"
-     height="48px"
-     width="48px"/>
-<form>
-  <textarea placeholder = "What's happening?">
-  </textarea>
-  <br/>
-  <select id="select-upload-type">
-    <option selected value="EVERYONE">Everyone can reply</option>
-    <option value="FOLLOWING">People you follow</option>
-    <option value="MENTIONED">
-      Only people you mention</option>
-  </select>
-  <br/>
-  <hr>
+    <!--Back to navigation screen-->
+    <a href="navigation.html">Back</a>
 
-  <input type="file"/>
+    <h1>Tuiter</h1>
+    <h2>Tuit</h2>
 
-  <button type="button">Tuit!</button>
-  <hr>
-</form>
+    <!--Owner account image-->
+    <img width="48px" height="48px" src="images/corgi.jpeg" alt="owner avatar"><br/>
+
+    <label for="tuit"></label>
+    <textarea placeholder="What's happening" id="tuit"></textarea><br>
+
+    <label for="dropdown"></label>
+    <select id="dropdown">
+        <option selected value="EVERYONE">Everyone can reply</option>
+        <option value="FOLLOWING">People you follow</option>
+        <option value="MENTIONED">Only people you mention</option>
+    </select><br/>
+
+    <hr/>
+    <input type="file"/>
+    <button>Tuit</button>
+    <hr/>
 </body>
 </html>
