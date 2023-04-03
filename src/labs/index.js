@@ -14,5 +14,6 @@ function Labs() {
             </Routes>
         </div>
     );
+
 }
 export default Labs;
