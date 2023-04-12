@@ -7,6 +7,7 @@ function Labs() {
     return(
         <div>
             <Nav/>
+            {/*<h1>Assignment 6</h1>*/}
             <Routes>
                 <Route index element={<Assignment6/>} />
                 <Route path="/a6" element={<Assignment6/>} />

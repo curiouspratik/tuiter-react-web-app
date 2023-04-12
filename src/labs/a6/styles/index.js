@@ -18,6 +18,7 @@ const Styles = () => {
     return(
         <div>
             <h1>Styles</h1>
+            {/* style attribute takes JSON object */}
             <div style={{"backgroundColor": "lightyellow", "color": "black", padding: "10px"}}>
                 Yellow background</div>
             <div style={bgRed}>

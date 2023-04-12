@@ -24,6 +24,7 @@ const ProfileComponent = () => {
 
     return(
         <>
+            {/* Username and back button */}
             <div className="row align-items-center justify-content-start">
                 <div className="col-auto">
                     <button type="button" className="btn" title="back" onClick={() => navigate(-1)}>
@@ -37,17 +38,21 @@ const ProfileComponent = () => {
                     </div>
                 </div>
             </div>
+            {/* banner picture and avatar */}
             <img src={`/images/${profile.bannerPicture}`} className="w-100" height="200" alt="banner" />
             <img src={`/images/${profile.profilePicture}`} className="rounded-circle img-thumbnail position-relative mb-2" style={nudge_up} width={160} alt="banner" />
             <Link to="/tuiter/profile/edit-profile" type="button" className="float-end border border-gray rounded-pill px-3 py-2 text-decoration-none bg-white text-black fw-bold my-3 mx-3">Edit Profile</Link>
             <div className="px-3">
+                {/* User Name */}
                 <h5 className="fw-bold mb-0 mt-3 ">{profile.firstName}{" "}{profile.lastName}</h5>
                 <div className="text-secondary" style={font_size}>
                     {profile.handle}
                 </div>
+                {/* Bio */}
                 <div className="mt-2">
                     {profile.bio}
                 </div>
+                {/* Information */}
                 <div className="text-secondary mt-2">
                     <span className="pe-3">
                         <i className="bi bi-geo-alt pe-2" />
@@ -62,6 +67,7 @@ const ProfileComponent = () => {
                         Joined {joinedDate}
                     </span>
                 </div>
+                {/* Following and Followers */}
                 <div className="mt-2">
                     <span className="pe-3">
                         <span className="fw-bold">{Number(profile.followingCount).toLocaleString()}{" "}</span>

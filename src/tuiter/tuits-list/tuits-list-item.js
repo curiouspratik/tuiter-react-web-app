@@ -2,6 +2,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import TuitsStats from "./tuits-stats";
 import {useDispatch} from "react-redux";
 import {deleteTuitsThunk} from "../../services/tuits-thunks";
+// import {deleteTuit} from "../tuits/tuits-reducer";
 
 const TuitsListItem = (
     {
@@ -23,25 +24,33 @@ const TuitsListItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
+        // in a7, we use deleteTuit function from the reducer
+        // dispatch(deleteTuit(id));
+        // in a8, we use thunk
         dispatch(deleteTuitsThunk(id))
     }
 
     return(
         <div className="list-group-item pt-3 wd-post-list-item border-1">
             <div className="row">
+                {/* Left Avatar */}
                 <div className="col-auto">
                     <img src={`/images/${tuit.image}`} className="rounded-circle" width="48px" alt="avatar"/>
                 </div>
+                {/* Right Content */}
                 <div className="col-10">
+                    {/* User's name handle and post time */}
                     <div>
                         <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(tuit._id)} />
                         <span className="fw-bolder">{tuit.userName}{' '}</span>
                         <FontAwesomeIcon icon="fa-solid fa-circle-check" className="text-primary"/>
                         <span className="text-secondary">{' '}{tuit.handle} {'\u00B7'} {tuit.time}</span>
                     </div>
+                    {/* Tuit */}
                     <div className="mb-4">
                         {tuit.tuit}
                     </div>
+                    {/* Bottom Icons */}
                     <TuitsStats tuit={tuit}/>
                 </div>
             </div>

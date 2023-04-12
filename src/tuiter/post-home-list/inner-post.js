@@ -75,8 +75,10 @@ const InnerPost = (
                         <FontAwesomeIcon icon="fa-solid fa-circle-check" className="text-primary"/>
                         <span className="text-secondary">{' '}@{tweet.userHandle} {'\u00B7'} {tweet.time}</span>
                     </div>
+                    {/* Post Title */}
                     {tweet.markText && <MarkTextAsLink text={tweet.title} markText={tweet.markText}/>}
                     {!tweet.markText && tweet.title}
+                    {/* Inner Post */}
                     <InnerPost post={tweet.innerPost}
                                tweet={tweet.innerPost.type === "tweet" ? filterById(posts, tweet.innerPost.tweetId): null}/>
                 </div>
